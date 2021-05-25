@@ -7,6 +7,6 @@ scripts
 bin
 ISSUE_TEMPLATE.md
 
-src/ionic/index.ts
-src/ionic/tsconfig.json
+src/android/index.ts
+src/android/tsconfig.json
 *.tgz
