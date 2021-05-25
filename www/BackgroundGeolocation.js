@@ -44,9 +44,9 @@ module.exports = {
     ACCURACY_AUTHORIZATION_FULL: 0,
     ACCURACY_AUTHORIZATION_REDUCED: 1,
 
-    deviceSettings: DeviceSettings,
+    deviceSettings: {},
 
-    logger: Logger,
+    logger: function(){},
 
     ready: function (defaultConfig, success, failure) {
         return true
