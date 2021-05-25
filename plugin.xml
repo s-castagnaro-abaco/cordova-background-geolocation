@@ -17,7 +17,7 @@
 
     <dependency id="cordova-plugin-background-fetch" version="~7.0.1" />
 
-    <js-module src="www/js/BackgroundGeolocation.js" name="BackgroundGeolocation">
+    <js-module src="www/BackgroundGeolocation.js" name="BackgroundGeolocation">
         <clobbers target="window.BackgroundGeolocation" />
     </js-module>
 
