@@ -9,14 +9,14 @@
             "android"
         ]
     },
-    "main": "./src/index.js",
-    "types": "./src/index.d.ts",
+    "main": "./src/android/index.js",
+    "types": "./src/android/index.d.ts",
     "repository": {
         "type": "git",
         "url": "https://github.com/s-castagnaro-abaco/cordova-background-geolocation"
     },
     "scripts": {
-        "build": "tsc -p src",
+        "build": "tsc -p src/android",
         "prepublish": "npm run build"
     },
     "keywords": [
