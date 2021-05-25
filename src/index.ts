@@ -51,334 +51,270 @@ export default class BackgroundGeolocation
 
     static ready(config: any, success?: Function, failure?: Function)
     {
-        let bgGeo = plugin();
-        return bgGeo.ready.apply(bgGeo, arguments);
+        return true;
     }
     static configure()
     {
-        let bgGeo = plugin();
-        return bgGeo.configure.apply(bgGeo, arguments);
+        
+        return true;
     }
     static reset()
     {
-        let bgGeo = plugin();
-        return bgGeo.reset.apply(bgGeo, arguments);
+        return true;
     }
 
     static onLocation(success: Function, failure: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onLocation.apply(bgGeo, arguments);
+        
     }
     static onMotionChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onMotionChange.apply(bgGeo, arguments);
+        
     }
     static onHttp(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onHttp.apply(bgGeo, arguments);
+        
     }
     static onHeartbeat(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onHeartbeat.apply(bgGeo, arguments);
+      
     }
     static onProviderChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onProviderChange.apply(bgGeo, arguments);
+        
     }
     static onActivityChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onActivityChange.apply(bgGeo, arguments);
+       
     }
     static onGeofence(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onGeofence.apply(bgGeo, arguments);
+       
     }
     static onGeofencesChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onGeofencesChange.apply(bgGeo, arguments);
+        
     }
     static onSchedule(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onSchedule.apply(bgGeo, arguments);
+        
     }
     static onEnabledChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onEnabledChange.apply(bgGeo, arguments);
+       
     }
     static onConnectivityChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onConnectivityChange.apply(bgGeo, arguments);
+        
     }
     static onPowerSaveChange(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onPowerSaveChange.apply(bgGeo, arguments);
+        
     }
     static onNotificationAction(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onNotificationAction.apply(bgGeo, arguments);
+        
     }
     static onAuthorization(callback: Function)
     {
-        let bgGeo = plugin();
-        bgGeo.onAuthorization.apply(bgGeo, arguments);
+        
     }
     static on()
     {
-        let bgGeo = plugin();
-        return bgGeo.on.apply(bgGeo, arguments);
+        
     }
     static un()
     {
-        let bgGeo = plugin();
-        return bgGeo.un.apply(bgGeo, arguments);
+        
     }
     static removeListener()
     {
-        let bgGeo = plugin();
-        return bgGeo.removeListener.apply(bgGeo, arguments);
+       
     }
     static removeListeners()
     {
-        let bgGeo = plugin();
-        return bgGeo.removeListeners.apply(bgGeo, arguments);
+        
     }
     static getState()
     {
-        let bgGeo = plugin();
-        return bgGeo.getState.apply(bgGeo, arguments);
+        
     }
     static start()
     {
-        let bgGeo = plugin();
-        return bgGeo.start.apply(bgGeo, arguments);
+        return true;
     }
     static stop()
     {
-        let bgGeo = plugin();
-        return bgGeo.stop.apply(bgGeo, arguments);
+        return true;
     }
     static startSchedule()
     {
-        let bgGeo = plugin();
-        return bgGeo.startSchedule.apply(bgGeo, arguments);
+        return true;
     }
     static stopSchedule()
     {
-        let bgGeo = plugin();
-        return bgGeo.stopSchedule.apply(bgGeo, arguments);
+        return true;
     }
     static startGeofences()
     {
-        let bgGeo = plugin();
-        return bgGeo.startGeofences.apply(bgGeo, arguments);
+        return true;
     }
     static startBackgroundTask()
     {
-        let bgGeo = plugin();
-        return bgGeo.startBackgroundTask.apply(bgGeo, arguments);
+        return true;
     }
-    // TODO rename native method -> #stopBackgroundTask
+
     static stopBackgroundTask()
     {
-        let bgGeo = plugin();
-        return bgGeo.stopBackgroundTask.apply(bgGeo, arguments);
+        return true;
     }
     // @deprecated.
     static finish()
     {
-        return BackgroundGeolocation.stopBackgroundTask();
+        return true;
     }
     static changePace()
     {
-        let bgGeo = plugin();
-        return bgGeo.changePace.apply(bgGeo, arguments);
+        return true;
     }
     static setConfig()
     {
-        let bgGeo = plugin();
-        return bgGeo.setConfig.apply(bgGeo, arguments);
+        return true;
     }
     static getLocations()
     {
-        let bgGeo = plugin();
-        return bgGeo.getLocations.apply(bgGeo, arguments);
+        return true;
     }
     static getCount()
     {
-        let bgGeo = plugin();
-        return bgGeo.getCount.apply(bgGeo, arguments);
+        return 0;
     }
     static destroyLocations()
     {
-        let bgGeo = plugin();
-        return bgGeo.destroyLocations.apply(bgGeo, arguments);
+        return true;
     }
     static destroyLocation(uuid: string)
     {
-        let bgGeo = plugin();
-        return bgGeo.destroyLocation(uuid);
+        return true;
     }
     static insertLocation()
     {
-        let bgGeo = plugin();
-        return bgGeo.insertLocation.apply(bgGeo, arguments);
+        return true;
     }
     static sync()
     {
-        let bgGeo = plugin();
-        return bgGeo.sync.apply(bgGeo, arguments);
+        return true;
     }
     static getOdometer()
     {
-        let bgGeo = plugin();
-        return bgGeo.getOdometer.apply(bgGeo, arguments);
+        return true;
     }
     static resetOdometer()
     {
-        let bgGeo = plugin();
-        return bgGeo.resetOdometer.apply(bgGeo, arguments);
+        return true;
     }
     static setOdometer()
     {
-        let bgGeo = plugin();
-        return bgGeo.setOdometer.apply(bgGeo, arguments);
+        return true;
     }
     static addGeofence()
     {
-        let bgGeo = plugin();
-        return bgGeo.addGeofence.apply(bgGeo, arguments);
+        return true;
     }
     static removeGeofence()
     {
-        let bgGeo = plugin();
-        return bgGeo.removeGeofence.apply(bgGeo, arguments);
+        return true;
     }
     static addGeofences()
     {
-        let bgGeo = plugin();
-        return bgGeo.addGeofences.apply(bgGeo, arguments);
+        return true;
     }
     static removeGeofences()
     {
-        let bgGeo = plugin();
-        return bgGeo.removeGeofences.apply(bgGeo, arguments);
+        return true;
     }
     static getGeofences()
     {
-        let bgGeo = plugin();
-        return bgGeo.getGeofences.apply(bgGeo, arguments);
+        return true;
     }
     static getGeofence()
     {
-        let bgGeo = plugin();
-        return bgGeo.getGeofence.apply(bgGeo, arguments);
+        return true;
     }
     static geofenceExists()
     {
-        let bgGeo = plugin();
-        return bgGeo.geofenceExists.apply(bgGeo, arguments);
+        return true;
     }
     static getCurrentPosition()
     {
-        let bgGeo = plugin();
-        return bgGeo.getCurrentPosition.apply(bgGeo, arguments);
+        return true;
     }
     static watchPosition()
     {
-        let bgGeo = plugin();
-        return bgGeo.watchPosition.apply(bgGeo, arguments);
+        return true;
     }
     static stopWatchPosition()
     {
-        let bgGeo = plugin();
-        return bgGeo.stopWatchPosition.apply(bgGeo, arguments);
+        return true;
     }
     static registerHeadlessTask()
     {
-        let bgGeo = plugin();
-        return bgGeo.registerHeadlessTask.apply(bgGeo, arguments);
+        return true;
     }
     static setLogLevel()
     {
-        let bgGeo = plugin();
-        return bgGeo.setLogLevel.apply(bgGeo, arguments);
+        return true;
     }
     static getLog()
     {
-        let bgGeo = plugin();
-        return bgGeo.getLog.apply(bgGeo, arguments);
+        return true;
     }
     static destroyLog()
     {
-        let bgGeo = plugin();
-        return bgGeo.destroyLog.apply(bgGeo, arguments);
+        return true;
     }
     static emailLog()
     {
-        let bgGeo = plugin();
-        return bgGeo.emailLog.apply(bgGeo, arguments);
+        return true;
     }
     static isPowerSaveMode()
     {
-        let bgGeo = plugin();
-        return bgGeo.isPowerSaveMode.apply(bgGeo, arguments);
+        return true;
     }
     static getSensors()
     {
-        let bgGeo = plugin();
-        return bgGeo.getSensors.apply(bgGeo, arguments);
+        return true;
     }
     static getDeviceInfo()
     {
-        let bgGeo = plugin();
-        return bgGeo.getDeviceInfo.apply(bgGeo, arguments);
+        return true;
     }
     static playSound()
     {
-        let bgGeo = plugin();
-        return bgGeo.playSound.apply(bgGeo, arguments);
+        return true;
     }
     static transistorTrackerParams()
     {
-        let bgGeo = plugin();
-        return bgGeo.transistorTrackerParams.apply(bgGeo, arguments);
+        return true;
     }
     static findOrCreateTransistorAuthorizationToken(orgname: string, username: string, host?: string)
     {
-        let bgGeo = plugin();
-        return bgGeo.findOrCreateTransistorAuthorizationToken.apply(bgGeo, arguments);
+        return true;
     }
     static destroyTransistorAuthorizationToken(host: string)
     {
-        let bgGeo = plugin();
-        return bgGeo.destroyTransistorAuthorizationToken.apply(bgGeo, arguments);
+        return true;
     }
     static getProviderState()
     {
-        let bgGeo = plugin();
-        return bgGeo.getProviderState.apply(bgGeo, arguments);
+        return true;
     }
     static requestPermission()
     {
-        let bgGeo = plugin();
-        return bgGeo.requestPermission.apply(bgGeo, arguments);
+        return true;
     }
     static requestTemporaryFullAccuracy()
     {
-        let bgGeo = plugin();
-        return bgGeo.requestTemporaryFullAccuracy.apply(bgGeo, arguments);
+        return true;
     }
 }

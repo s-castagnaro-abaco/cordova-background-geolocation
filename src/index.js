@@ -175,269 +175,184 @@ var BackgroundGeolocation = /** @class */ (function () {
         configurable: true
     });
     BackgroundGeolocation.ready = function (config, success, failure) {
-        var bgGeo = plugin();
-        return bgGeo.ready.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.configure = function () {
-        var bgGeo = plugin();
-        return bgGeo.configure.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.reset = function () {
-        var bgGeo = plugin();
-        return bgGeo.reset.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.onLocation = function (success, failure) {
-        var bgGeo = plugin();
-        bgGeo.onLocation.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onMotionChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onMotionChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onHttp = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onHttp.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onHeartbeat = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onHeartbeat.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onProviderChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onProviderChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onActivityChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onActivityChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onGeofence = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onGeofence.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onGeofencesChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onGeofencesChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onSchedule = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onSchedule.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onEnabledChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onEnabledChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onConnectivityChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onConnectivityChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onPowerSaveChange = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onPowerSaveChange.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onNotificationAction = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onNotificationAction.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.onAuthorization = function (callback) {
-        var bgGeo = plugin();
-        bgGeo.onAuthorization.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.on = function () {
-        var bgGeo = plugin();
-        return bgGeo.on.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.un = function () {
-        var bgGeo = plugin();
-        return bgGeo.un.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.removeListener = function () {
-        var bgGeo = plugin();
-        return bgGeo.removeListener.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.removeListeners = function () {
-        var bgGeo = plugin();
-        return bgGeo.removeListeners.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.getState = function () {
-        var bgGeo = plugin();
-        return bgGeo.getState.apply(bgGeo, arguments);
     };
     BackgroundGeolocation.start = function () {
-        var bgGeo = plugin();
-        return bgGeo.start.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.stop = function () {
-        var bgGeo = plugin();
-        return bgGeo.stop.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.startSchedule = function () {
-        var bgGeo = plugin();
-        return bgGeo.startSchedule.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.stopSchedule = function () {
-        var bgGeo = plugin();
-        return bgGeo.stopSchedule.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.startGeofences = function () {
-        var bgGeo = plugin();
-        return bgGeo.startGeofences.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.startBackgroundTask = function () {
-        var bgGeo = plugin();
-        return bgGeo.startBackgroundTask.apply(bgGeo, arguments);
+        return true;
     };
-    // TODO rename native method -> #stopBackgroundTask
     BackgroundGeolocation.stopBackgroundTask = function () {
-        var bgGeo = plugin();
-        return bgGeo.stopBackgroundTask.apply(bgGeo, arguments);
+        return true;
     };
     // @deprecated.
     BackgroundGeolocation.finish = function () {
-        return BackgroundGeolocation.stopBackgroundTask();
+        return true;
     };
     BackgroundGeolocation.changePace = function () {
-        var bgGeo = plugin();
-        return bgGeo.changePace.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.setConfig = function () {
-        var bgGeo = plugin();
-        return bgGeo.setConfig.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getLocations = function () {
-        var bgGeo = plugin();
-        return bgGeo.getLocations.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getCount = function () {
-        var bgGeo = plugin();
-        return bgGeo.getCount.apply(bgGeo, arguments);
+        return 0;
     };
     BackgroundGeolocation.destroyLocations = function () {
-        var bgGeo = plugin();
-        return bgGeo.destroyLocations.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.destroyLocation = function (uuid) {
-        var bgGeo = plugin();
-        return bgGeo.destroyLocation(uuid);
+        return true;
     };
     BackgroundGeolocation.insertLocation = function () {
-        var bgGeo = plugin();
-        return bgGeo.insertLocation.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.sync = function () {
-        var bgGeo = plugin();
-        return bgGeo.sync.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getOdometer = function () {
-        var bgGeo = plugin();
-        return bgGeo.getOdometer.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.resetOdometer = function () {
-        var bgGeo = plugin();
-        return bgGeo.resetOdometer.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.setOdometer = function () {
-        var bgGeo = plugin();
-        return bgGeo.setOdometer.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.addGeofence = function () {
-        var bgGeo = plugin();
-        return bgGeo.addGeofence.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.removeGeofence = function () {
-        var bgGeo = plugin();
-        return bgGeo.removeGeofence.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.addGeofences = function () {
-        var bgGeo = plugin();
-        return bgGeo.addGeofences.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.removeGeofences = function () {
-        var bgGeo = plugin();
-        return bgGeo.removeGeofences.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getGeofences = function () {
-        var bgGeo = plugin();
-        return bgGeo.getGeofences.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getGeofence = function () {
-        var bgGeo = plugin();
-        return bgGeo.getGeofence.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.geofenceExists = function () {
-        var bgGeo = plugin();
-        return bgGeo.geofenceExists.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getCurrentPosition = function () {
-        var bgGeo = plugin();
-        return bgGeo.getCurrentPosition.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.watchPosition = function () {
-        var bgGeo = plugin();
-        return bgGeo.watchPosition.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.stopWatchPosition = function () {
-        var bgGeo = plugin();
-        return bgGeo.stopWatchPosition.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.registerHeadlessTask = function () {
-        var bgGeo = plugin();
-        return bgGeo.registerHeadlessTask.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.setLogLevel = function () {
-        var bgGeo = plugin();
-        return bgGeo.setLogLevel.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getLog = function () {
-        var bgGeo = plugin();
-        return bgGeo.getLog.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.destroyLog = function () {
-        var bgGeo = plugin();
-        return bgGeo.destroyLog.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.emailLog = function () {
-        var bgGeo = plugin();
-        return bgGeo.emailLog.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.isPowerSaveMode = function () {
-        var bgGeo = plugin();
-        return bgGeo.isPowerSaveMode.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getSensors = function () {
-        var bgGeo = plugin();
-        return bgGeo.getSensors.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getDeviceInfo = function () {
-        var bgGeo = plugin();
-        return bgGeo.getDeviceInfo.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.playSound = function () {
-        var bgGeo = plugin();
-        return bgGeo.playSound.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.transistorTrackerParams = function () {
-        var bgGeo = plugin();
-        return bgGeo.transistorTrackerParams.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.findOrCreateTransistorAuthorizationToken = function (orgname, username, host) {
-        var bgGeo = plugin();
-        return bgGeo.findOrCreateTransistorAuthorizationToken.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.destroyTransistorAuthorizationToken = function (host) {
-        var bgGeo = plugin();
-        return bgGeo.destroyTransistorAuthorizationToken.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.getProviderState = function () {
-        var bgGeo = plugin();
-        return bgGeo.getProviderState.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.requestPermission = function () {
-        var bgGeo = plugin();
-        return bgGeo.requestPermission.apply(bgGeo, arguments);
+        return true;
     };
     BackgroundGeolocation.requestTemporaryFullAccuracy = function () {
-        var bgGeo = plugin();
-        return bgGeo.requestTemporaryFullAccuracy.apply(bgGeo, arguments);
+        return true;
     };
     return BackgroundGeolocation;
 }());

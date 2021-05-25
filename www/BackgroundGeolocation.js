@@ -174,7 +174,7 @@ module.exports = {
        
     },
     getCount: function (success, failure) {
-        
+        return 0;
     },
     destroyLocations: function (success, failure) {
         
