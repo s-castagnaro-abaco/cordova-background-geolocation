@@ -6,7 +6,8 @@
     "main": "./src/index.js",
     "types": "./src/index.d.ts",
     "scripts": {
-        "typescript": "tsc"
+        "typescript": "tsc",
+        "build": "tsc -p src"
     },
     "keywords": [
         "ecosystem:cordova"

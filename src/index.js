@@ -1,5 +1,3 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 var plugin = function () {
     return window.BackgroundGeolocation;
 };
@@ -443,4 +441,4 @@ var BackgroundGeolocation = /** @class */ (function () {
     };
     return BackgroundGeolocation;
 }());
-exports.default = BackgroundGeolocation;
+export default BackgroundGeolocation;
