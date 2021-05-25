@@ -1,5 +1,5 @@
 {
-    "name": "com.abacogroup.backgroundgeolocation",
+    "name": "cordova-background-geolocation",
     "displayName": "BackgroundGeolocation",
     "version": "1.0.0",
     "description": "A sample Apache Cordova application that responds to the deviceready event.",
@@ -21,10 +21,9 @@
         "cordova-android": "^8.1.0"
     },
     "cordova": {
-        "plugins": {
-            "cordova-plugin-whitelist": {}
-        },
+        "id": "cordova-background-geolocation",
         "platforms": [
+            "ios",
             "android"
         ]
     }
