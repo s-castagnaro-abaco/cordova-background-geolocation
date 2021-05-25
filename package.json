@@ -23,8 +23,7 @@
     "cordova": {
         "id": "cordova-background-geolocation",
         "platforms": [
-            "ios",
-            "android"
+            "ios"
         ]
     }
 }
